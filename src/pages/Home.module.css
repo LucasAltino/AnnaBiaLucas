@@ -1,0 +1,237 @@
+.principal{
+    background-color: #920000;
+    display: flex;
+    align-items: center;
+    padding: 18vw 2vw;
+    width: 96vw;
+    min-height: 100vh;
+    justify-content: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    flex-direction: column;
+
+}
+
+.card{
+    color: white;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    height: 50vh;
+    width: 100%;
+    border-radius: 4vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo{
+     text-align: left;
+     width: 100%;
+     font-size: 6vw;
+     font-weight: 500;
+     margin: 4.5vw 0 2vw 0
+ }
+
+.autor{
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    color: #dcdcdc;
+    margin-bottom: 1vw;
+}
+
+svg{
+    width: 13vw;
+    height: 13vw;
+}
+
+.player {
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.progress-container {
+    background: rgba(255, 255, 255, 0.3);
+    height: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress{
+    background: white;
+    height: 2vw;
+    border-radius: 2vw;
+}
+
+#progress {
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vw;
+    margin-top: 3vw;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+}
+
+.cardtempo{
+    width: 90vw;
+    border-radius: 4vw;
+    height: 65vh;
+    margin-bottom: 40vw;
+    color: white;
+
+}
+
+.fotinha{
+    background: url("/public/fotinha.jpeg");
+    width: 100%;
+    height: 65%;
+    border-radius: 4vw 4vw 0 0;
+    background-size: cover;
+    margin-top: 10vw;
+    background-position-x: -8vw;
+}
+
+
+.timer{
+    background: #CF0000;
+    min-height: 35%;
+    width: 100%;
+    border-radius: 0 0 4vw 4vw;
+}
+
+.nome{
+    margin: 0;
+    text-align: left;
+    padding-top: 5vw;
+    padding-left: 5vw;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.fotinha p{
+    font-size: 5vw;
+    text-align: left;
+    padding-left: 5vw;
+    padding-top: 6vw;
+    font-weight: 500;
+}
+
+.timer h3{
+    margin: 0;
+    text-align: left;
+    padding-top: 2vw;
+    padding-left: 5vw;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.data{
+    background-image: url("/public/fundocoracao.png");
+    display: flex;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.data img{
+    width: 70%;
+}
+.data p {
+    margin-top: -16vw;
+    rotate: -6deg;
+    margin-left: 5vw;
+    font-size: 5vw;
+    font-weight: 600;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #000;
+    width: 0;
+    animation: typing 8s steps(12) infinite;
+}
+
+/* digita, pausa, apaga e repete */
+@keyframes typing {
+    0% { width: 0; }          /* começa sem texto */
+    40% { width: 11.5ch; }    /* digita até o final (≈ 2.8s) */
+    60% { width: 15.5ch; }    /* pausa com o texto completo */
+    100% { width: 0; }        /* apaga tudo (≈ 2.8s) */
+}
+
+/* cursor piscando */
+.data p {
+    animation-timing-function: steps(12, end);
+    border-right: 0.15em solid black;
+}
+
+.data p::after {
+    content: "";
+    animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.carta{
+    background-image: url("/public/fundocarta.png");
+    height: 100vh;
+    margin-bottom: -18vw;
+    margin-top: 27vw;
+    width: 121vw;
+    background-size: 120%;
+    margin-left: -22%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carta p{
+    width: 64vw;
+    text-align: justify;
+    margin-left: 21%;
+    font-size: 4vw;
+}
