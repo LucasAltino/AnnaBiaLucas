@@ -4,6 +4,7 @@ import styles from "./Home.module.css";
 function Card({ title, artist, audioSrc, imageSrc, onNext, onPrev }) {
     const audioRef = useRef(null);
     const progressRef = useRef(null);
+    const progressContainerRef = useRef(null);
 
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
@@ -24,6 +25,22 @@ function Card({ title, artist, audioSrc, imageSrc, onNext, onPrev }) {
         const minutes = Math.floor(sec / 60);
         const seconds = Math.floor(sec % 60);
         return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+    };
+
+    const handleProgressClick = (e) => {
+        const audio = audioRef.current;
+        const container = progressContainerRef.current;
+
+        if (!audio || !container || !duration) return;
+
+        // Pega posição do clique e largura total
+        const rect = container.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const newTime = (clickX / rect.width) * duration;
+
+        // Atualiza o tempo da música
+        audio.currentTime = newTime;
+        setCurrentTime(newTime);
     };
 
     useEffect(() => {
@@ -52,7 +69,7 @@ function Card({ title, artist, audioSrc, imageSrc, onNext, onPrev }) {
             audio.removeEventListener("timeupdate", update);
             audio.removeEventListener("loadeddata", tryAutoplay);
         };
-    }, [audioSrc]); // reinicia o player ao trocar de música
+    }, [audioSrc]);
 
     return (
         <div className={styles.card}>
@@ -63,20 +80,35 @@ function Card({ title, artist, audioSrc, imageSrc, onNext, onPrev }) {
                     backgroundRepeat: "no-repeat",
                 }}
             ></div>
+
             <p className={styles.titulo}>{title}</p>
             <p className={styles.autor}>{artist}</p>
 
             <div className={styles.player}>
-                <audio ref={audioRef} src={audioSrc} preload="metadata"></audio>
+                <audio ref={audioRef} src={audioSrc} autoPlay preload="metadata"></audio>
 
+                {/* Barra de progresso clicável */}
                 <div
+                    ref={progressContainerRef}
+                    onClick={handleProgressClick}
                     style={{
                         width: "100%",
                         background: "#C08B8B",
                         borderRadius: "2vw",
+                        cursor: "pointer",
                     }}
                 >
-                    <div ref={progressRef} className={styles.progress}></div>
+                    <div
+                        ref={progressRef}
+                        className={styles.progress}
+                        style={{
+                            width: "0%",
+                            height: "8px",
+                            background: "#fff",
+                            borderRadius: "2vw",
+                            transition: "width 0.1s linear",
+                        }}
+                    ></div>
                 </div>
 
                 <div className={styles.time}>
