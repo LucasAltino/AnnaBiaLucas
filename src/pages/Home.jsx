@@ -145,7 +145,7 @@ function Home() {
                     “A vida é boa, mas é muito melhor com você”.
                 </p>
                 <p style={{ margin: 0, marginLeft: "21%" }}>Do seu eterno namorado,</p>
-                <p>Lucas Altino</p>
+                <p style={{textAlign:"center"}}>Lucas Altino</p>
             </div>
         </div>
     );
@@ -203,3 +203,4 @@ const buttonStyle = {
 };
 
 export default Home;
+
