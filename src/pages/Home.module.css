@@ -168,7 +168,7 @@ svg{
     background-repeat: repeat;
     width: 100vw;
     height: 100vh;
-    margin-top: 10vw;
+    margin-top: 25vw;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -234,4 +234,5 @@ svg{
     text-align: justify;
     margin-left: 21%;
     font-size: 4vw;
+
 }
