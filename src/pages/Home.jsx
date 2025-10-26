@@ -141,7 +141,7 @@ function Home() {
                     <br /><br />
                     Amor, existe algo em você que me cativa de um jeito único, algo que não sei explicar,
                     mas que me faz me apaixonar mais e mais a cada dia. É como se tudo em mim encontrasse paz
-                    quando estou com você. A vida, desde então, ficou mais bonita, até poque como já disse nosso querido amigo Rubel,
+                    quando estou com você. A vida, desde então, ficou mais bonita, até porque como já disse nosso querido amigo Rubel,
                     “A vida é boa, mas é muito melhor com você”.
                 </p>
                 <p style={{ margin: 0, marginLeft: "21%" }}>Do seu eterno namorado,</p>
@@ -203,4 +203,5 @@ const buttonStyle = {
 };
 
 export default Home;
+
 
