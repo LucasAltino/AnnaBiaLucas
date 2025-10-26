@@ -12,49 +12,49 @@ function Home() {
             title: "Aliança",
             artist: "Tribalistas",
             audioSrc: "/alianca.mp3",
-            imageSrc: "/foto1.jpeg",
+            imageSrc: "/foto1.webp",
         },
         {
             title: "Lisboa",
             artist: "ANAVITÓRIA, Lenine",
             audioSrc: "/lisboa.mp3",
-            imageSrc: "/foto2.jpeg",
+            imageSrc: "/foto2.webp",
         },
         {
             title: "Velha Infância",
             artist: "Tribalistas",
             audioSrc: "/velha.mp3",
-            imageSrc: "/foto3.jpeg",
+            imageSrc: "/foto3.webp",
         },
         {
             title: "Partilhar",
             artist: "Rubel",
             audioSrc: "/partilhar.mp3",
-            imageSrc: "/foto4.jpeg",
+            imageSrc: "/foto4.webp",
         },
         {
             title: "BB",
             artist: "Tim Bernardes",
             audioSrc: "/BB.mp3",
-            imageSrc: "/foto5.jpeg",
+            imageSrc: "/foto5.webp",
         },
         {
             title: "Um Amor Puro",
             artist: "Djavan",
             audioSrc: "/amorpuro.mp3",
-            imageSrc: "/foto6.jpeg",
+            imageSrc: "/foto6.webp",
         },
         {
             title: "Levo Comigo",
             artist: "Restart",
             audioSrc: "/levocomigo.mp3",
-            imageSrc: "/foto7.jpeg",
+            imageSrc: "/foto7.webp",
         },
         {
             title: "Não Quero Dinheiro",
             artist: "Tim Maia",
             audioSrc: "/queroamar.mp3",
-            imageSrc: "/foto9.jpeg",
+            imageSrc: "/foto9.webp",
         },
     ];
 
@@ -130,7 +130,7 @@ function Home() {
             <Carousel />
 
             <div className={styles.data}>
-                <img src="/fotodata.png" alt="" />
+                <img src="/fotodata.webp" alt="" />
                 <p>26 / 08 / 2025</p>
             </div>
 

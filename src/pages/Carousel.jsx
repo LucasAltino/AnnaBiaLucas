@@ -3,14 +3,14 @@ import styles from "./Carousel.module.css";
 
 function Carousel() {
     const images = [
-        "/foto3.jpeg",
-        "/foto1.jpeg",
-        "/foto2.jpeg",
-        "/foto4.jpeg",
-        "/foto5.jpeg",
-        "/foto6.jpeg",
-        "/foto7.jpeg",
-        "/foto8.jpeg",
+        "/foto3.webp",
+        "/foto1.webp",
+        "/foto2.webp",
+        "/foto4.webp",
+        "/foto5.webp",
+        "/foto6.webp",
+        "/foto7.webp",
+        "/foto8.webp",
     ];
 
     const [index, setIndex] = useState(0);

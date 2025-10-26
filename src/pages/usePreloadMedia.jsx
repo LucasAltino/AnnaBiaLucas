@@ -3,15 +3,15 @@ import { useEffect } from "react";
 function usePreloadMedia() {
     useEffect(() => {
         const images = [
-            "/foto1.jpeg",
-            "/foto2.jpeg",
-            "/foto3.jpeg",
-            "/foto4.jpeg",
-            "/foto5.jpeg",
-            "/foto6.jpeg",
-            "/foto7.jpeg",
-            "/foto9.jpeg",
-            "/fotodata.png",
+            "/foto1.webp",
+            "/foto2.webp",
+            "/foto3.webp",
+            "/foto4.webp",
+            "/foto5.webp",
+            "/foto6.webp",
+            "/foto7.webp",
+            "/foto9.webp",
+            "/fotodata.webp",
         ];
 
         const audios = [
