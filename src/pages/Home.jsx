@@ -78,7 +78,7 @@ function Home() {
         if (inputValue.trim().toLowerCase() === "anna beatriz") {
             setAuthorized(true);
         } else {
-            setError("Nome incorreto😠! Tente novamente ❤️");
+            setError("Nome incorreto! Tente novamente ❤️");
         }
     };
 
@@ -203,6 +203,7 @@ const buttonStyle = {
 };
 
 export default Home;
+
 
 
 
