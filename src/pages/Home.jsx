@@ -174,6 +174,7 @@ const formStyle = {
     flexDirection: "column",
     alignItems: "center",
     boxShadow: "0 0 20px rgba(255,255,255,0.1)",
+    width: 70%;
 };
 
 const inputStyle = {
@@ -201,3 +202,4 @@ const buttonStyle = {
 };
 
 export default Home;
+
