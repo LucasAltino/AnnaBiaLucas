@@ -168,24 +168,25 @@ const overlayStyle = {
 
 const formStyle = {
     background: "#222",
-    padding: "40px",
+    padding: "5vw",
+    width: "70%",
+    minHeight: "32vh",
     borderRadius: "12px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     boxShadow: "0 0 20px rgba(255,255,255,0.1)",
-    width: 70%;
 };
 
 const inputStyle = {
-    padding: "10px 15px",
+    padding: "2vw 3vw",
     borderRadius: "6px",
     border: "1px solid #555",
     background: "#333",
     color: "#fff",
     marginBottom: "10px",
     outline: "none",
-    width: "200px",
+    width: "85%",
     textAlign: "center",
 };
 
@@ -202,4 +203,3 @@ const buttonStyle = {
 };
 
 export default Home;
-
